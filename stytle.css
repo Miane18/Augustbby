@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url(Agrandir-WideLight.otf);
+  }
+html, body {
+  background-color: #f8f8f8;
+  font-size: 40px;
+  font-family: Agrandir;
+  margin-top: 0px;
+  padding: 0;
+  height: 100%;
+}
+.hidden {
+  display: none !important;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  overflow: hidden;        
+}
+
+.cake-container {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 150px;
+}
+#cake {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.wick {
+  position: absolute;
+  top: 55px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 40px;
+  background: #ffee8c;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.flame {
+  position: absolute;
+  top: 30px;
+  left: 60%;
+  transform-origin: center bottom;
+  width: 14px;
+  height: 22px;
+  background: radial-gradient(circle at 50% 40%, #ffdd55, #ff9900 70%, transparent 90%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker 1.2s ease-in-out infinite;
+  z-index: 3;
+  box-shadow:
+    0 0 10px rgba(255, 165, 0, 0.5),
+    0 0 20px rgba(255, 165, 0, 0.5),
+    0 0 60px rgba(255, 165, 0, 0.5),
+    0 0 80px rgba(255, 165, 0, 0.5);
+}
+
+#scratch-canvas {
+  position: block;
+  margin: 250px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#Cake,
+#birthday-text {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none; 
+}
+.wick, .flame {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.wick.show, .flame.show {
+  opacity: 1;
+}
+@keyframes flicker {
+  0% { transform: translateX(-50%) skewX(5deg); }
+  25% { transform: translateX(-50%) skewX(-5deg); }
+  50% { transform: translateX(-50%) skewX(10deg); }
+  75% { transform: translateX(-50%) skewX(-10deg); }
+  100% { transform: translateX(-50%) skewX(5deg); }
+}
