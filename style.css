@@ -4,7 +4,7 @@
   }
 html, body {
   background-color: #f8f8f8;
-  font-size: 40px;
+  font-size: 25px;
   font-family: Agrandir;
   margin-top: 0px;
   padding: 0;
@@ -98,4 +98,22 @@ html, body {
   50% { transform: translateX(-50%) skewX(10deg); }
   75% { transform: translateX(-50%) skewX(-10deg); }
   100% { transform: translateX(-50%) skewX(5deg); }
+}
+#claim-btn {
+  display: block;
+  margin: 12px auto 0 auto;
+  padding: 12px 28px;
+  background-color: #cfd7cc;
+  color: white;
+  font-weight: bold;
+  font-family: agrandir;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#claim-btn:hover {
+  background-color: #7ec8c8;
 }
