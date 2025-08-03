@@ -117,3 +117,6 @@ html, body {
 #claim-btn:hover {
   background-color: #7ec8c8;
 }
+#claim-link {
+  text-decoration: none;
+}
