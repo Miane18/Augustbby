@@ -1,5 +1,5 @@
 # Interactive Birthday Surprise Project
-A playful birthday-themed scratch-to-reveal animation for a delight bday wishes.
+A playful birthday-themed scratch-to-reveal animation for delightful bday wishes.
 
 ## Overview
 
@@ -11,14 +11,14 @@ Inspired by sherryuser/cake-blow, this version reimagines the concept with a scr
 
 ## Features
 
-Scratchable canvas interaction
-Animated candle flame and wick
-Birthday greeting message
-Confetti celebration
-Gift button with link
+- Scratchable canvas interaction
+- Animated candle flame and wick
+- Birthday greeting message
+- Confetti celebration
+- Gift button with link
 
 ## Accessing the Project
-Visit it live here: https://miane18.github.io/Augustbby/
+Visit Github Pages at: ([Scratch your surprise](https://miane18.github.io/Augustbby/))
 
 ## How to Use
 Visit the link
@@ -36,4 +36,4 @@ Click the button to claim your birthday gift
 
 ## Image Credit
 
-Cake image sourced from Redbubble.com [Pinterest link](https://www.pinterest.com/pin/tiramisu-square-sticker-by-sz03--751045675374161609//)) for placeholder purposes. All rights belong to the original artist.
+Cake image sourced from Redbubble.com ([See Pinterest link](https://www.pinterest.com/pin/tiramisu-square-sticker-by-sz03--751045675374161609//)) for placeholder purposes. All rights belong to the original artist.
